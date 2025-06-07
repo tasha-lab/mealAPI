@@ -19,7 +19,7 @@ btn.addEventListener(`click`, async (e) => {
     theList.style.display = "none";
     return;
   } else {
-    theresult.innerHTML = `OOH! ${value}`;
+    theresult.innerHTML = ``;
     theresult.style.fontFamily = "Roboto";
     theresult.style.textDecoration = "none";
     theList.style.display = "none";
@@ -41,8 +41,10 @@ btn.addEventListener(`click`, async (e) => {
 <div class="output">
               <h3>${item.strMeal}</h3>
               <h4>Origin: ${item.strArea} | Category: ${item.strCategory}</h4>
-              <p class"instructions">${item.strInstructions}</p>
-             <img src="${item.strMealThumb}" alt="${item.strMeal}" class="meal-image">
+              <p class"instructions" >${item.strInstructions}</p>
+              <div class="output-img">
+                 <img src="${item.strMealThumb}" alt="${item.strMeal}" class="meal-image">
+              </div>
               <ul meal="meal-list">
                 <li>${item.strIngredient1}</li>
                 <li>${item.strIngredient2}</li>
