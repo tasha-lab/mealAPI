@@ -32,7 +32,7 @@ body {
 .header-section {
   display: flex;
   /* border:2px solid red; */
-  width: 100%;
+  max-width: 100%;
   justify-content: space-between;
   min-height: 9rem;
   background-color: var(--mauve-3);
@@ -53,6 +53,9 @@ body {
   gap: 3rem;
   margin-right: 3rem;
   font-size: 3rem;
+}
+.icons i {
+  color: black;
 }
 @media screen and (max-width: 380px) {
   .two {
@@ -184,4 +187,18 @@ img {
   gap: 1rem;
 }
 @media screen and (max-width: 475px) {
+  h3{
+    font-size: 4rem;
+  }
+  h4{
+    font-size: 1.8rem;
+  }
+  .output p {
+    font-size: 1.6rem;
+    
+  }
+  .output-img{
+    width:34rem;
+  }
 }
+
