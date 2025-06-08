@@ -32,7 +32,7 @@ btn.addEventListener(`click`, async (e) => {
     const myresult = response.data.meals;
     console.log(myresult);
     if (!myresult) {
-      theList.innerHTML = "<p>No meals found for your search.</p>";
+      theresult.innerHTML = "<p>No meals found for your search!</p>";
       return;
     }
 
